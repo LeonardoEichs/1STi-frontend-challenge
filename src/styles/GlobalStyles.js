@@ -22,7 +22,7 @@ html, body, #root {
 
 html {
     background: var(--primary);
-    background: linear-gradient(0deg, var(--secondary) 0%, var(--primary) 100%); 
+    background: linear-gradient(0deg, var(--secondary) 0%, var(--primary) 100%) no-repeat; 
 }
 
 :root {

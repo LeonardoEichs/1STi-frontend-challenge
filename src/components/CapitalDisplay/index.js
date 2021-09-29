@@ -1,40 +1,65 @@
-import { Container, Row } from "./styles";
+import { Container, Row, MinMaxHeader } from "./styles";
 
 function CapitalDisplay() {
   return (
     <Container>
       <h1>Capitais</h1>
-      <Row className="header">
-        <div>Min</div>
-        <div>Máx</div>
-        <div></div>
-      </Row>
+      <MinMaxHeader>
+        <ul>
+          <li>
+            <Row className="header">
+              <div>Min</div>
+              <div>Máx</div>
+              <div></div>
+            </Row>
+          </li>
+          <li>
+            <Row className="header second-header">
+              <div>Min</div>
+              <div>Máx</div>
+              <div></div>
+            </Row>
+          </li>
+        </ul>
+      </MinMaxHeader>
 
-      <Row>
-        <div>18˚</div>
-        <div>27˚</div>
-        <div>Rio de Janeiro</div>
-      </Row>
-      <Row>
-        <div>18˚</div>
-        <div>27˚</div>
-        <div>Rio de Janeiro</div>
-      </Row>
-      <Row>
-        <div>18˚</div>
-        <div>27˚</div>
-        <div>Rio de Janeiro</div>
-      </Row>
-      <Row>
-        <div>18˚</div>
-        <div>27˚</div>
-        <div>Rio de Janeiro</div>
-      </Row>
-      <Row>
-        <div>18˚</div>
-        <div>27˚</div>
-        <div>Rio de Janeiro</div>
-      </Row>
+      <ul>
+        <li>
+          <Row>
+            <div>18˚</div>
+            <div>27˚</div>
+            <div>Rio de Janeiro</div>
+          </Row>
+        </li>
+        <li>
+          <Row>
+            <div>18˚</div>
+            <div>27˚</div>
+            <div>Rio de Janeiro</div>
+          </Row>
+        </li>
+        <li>
+          <Row>
+            <div>18˚</div>
+            <div>27˚</div>
+            <div>Rio de Janeiro</div>
+          </Row>
+        </li>
+        <li>
+          <Row>
+            <div>18˚</div>
+            <div>27˚</div>
+            <div>Rio de Janeiro</div>
+          </Row>
+        </li>
+        <li>
+          <Row>
+            <div>18˚</div>
+            <div>27˚</div>
+            <div>Rio de Janeiro</div>
+          </Row>
+        </li>
+      </ul>
     </Container>
   );
 }
