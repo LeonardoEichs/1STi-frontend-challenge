@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   background: var(--white);
   margin: 1em -2em;
-  padding: 1em 2em;
+  padding: 1em 3em;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   color: var(--gray);
 
@@ -21,6 +21,10 @@ export const Container = styled.div`
   .bold {
     font-weight: 500;
   }
+
+  @media (min-width: 740px) {
+    margin: 1em 0;
+  }
 `;
 
 export const HorizontalLine = styled.hr`
@@ -28,7 +32,10 @@ export const HorizontalLine = styled.hr`
   height: 1px;
   border: 0;
   border-top: 1px solid var(--primary);
-  margin: 1em -2em;
+  margin: 1em -3em;
+  @media (min-width: 740px) {
+    margin: 1em -1.5em;
+  }
 `;
 
 export const CloseButton = styled.button`
@@ -71,7 +78,12 @@ export const MinMaxTemp = styled.div`
 export const WeatherMain = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+
+  justify-content: start;
+
+  span:first-child {
+    margin-right: 1.25rem;
+  }
 `;
 
 export const WeatherInfo = styled.div`

@@ -6,7 +6,7 @@ export const Container = styled.div`
     margin-top: 1rem;
   }
 
-  @media (min-width: 530px) {
+  @media (min-width: 480px) {
     ul {
       display: flex;
       flex-wrap: wrap;
@@ -35,7 +35,7 @@ export const MinMaxHeader = styled.div`
     display: none;
   }
 
-  @media (min-width: 530px) {
+  @media (min-width: 480px) {
     .second-header {
       display: grid;
     }

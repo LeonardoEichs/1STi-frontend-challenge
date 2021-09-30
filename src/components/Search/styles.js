@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  h1 {
-    font-size: 1.5rem;
+  @media (min-width: 740px) {
+    & > h1 {
+      text-align: center;
+      font-size: 2.5rem;
+    }
   }
 `;
 

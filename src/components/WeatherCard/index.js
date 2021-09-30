@@ -20,8 +20,9 @@ function WeatherCard() {
         </CloseButton>
       </CardHeader>
       <WeatherMain>
-        <h2 className="temperature">20˚C</h2>
-        <h2 className="temperature">Nublado</h2>
+        <h2 className="temperature">
+          <span>20˚C</span> Nublado
+        </h2>
       </WeatherMain>
       <WeatherInfo>
         <MinMaxTemp>
