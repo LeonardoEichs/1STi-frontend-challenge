@@ -10,12 +10,16 @@ import {
   WeatherMain,
 } from "./styles";
 
+import { useState } from "react";
+
 function WeatherCard() {
+  const [cardVisible, setCardVisible] = useState(true);
+
   return (
-    <Container>
+    <Container style={{ display: cardVisible ? "block" : "none" }}>
       <CardHeader>
         <h1>Niterói, RJ - Brasil</h1>
-        <CloseButton>
+        <CloseButton onClick={() => setCardVisible(!cardVisible)}>
           <i class="fa fa-times"></i>
         </CloseButton>
       </CardHeader>

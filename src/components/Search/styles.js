@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  & > h1 {
+    margin-bottom: 2rem;
+  }
   @media (min-width: 740px) {
     & > h1 {
       text-align: center;
